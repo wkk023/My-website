@@ -4,23 +4,27 @@
     <title>我嘅第一個網頁</title>
     <style>
         body { 
-    font-family: sans-serif; 
-    text-align: center; 
-    padding-top: 50px; 
-    background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 100%); /* 漸變背景 */
-    height: 100vh;
-    margin: 0;
-}
-.card { 
-    background: rgba(255, 255, 255, 0.8); /* 半透明 */
-    backdrop-filter: blur(10px); 
-    padding: 40px; 
-    border-radius: 20px; 
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    transition: transform 0.3s; /* 郁動效果 */
-}
-.card:hover {
-    transform: scale(1.05); /* 隻鼠標指住會變大 */
+            font-family: sans-serif; 
+            text-align: center; 
+            padding-top: 50px; 
+            background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 100%); 
+            height: 100vh;
+            margin: 0;
+        }
+        .card { 
+            background: rgba(255, 255, 255, 0.8); 
+            backdrop-filter: blur(10px); 
+            padding: 40px; 
+            border-radius: 20px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+            display: inline-block; /* 確保 card 大小隨內容變化 */
+            cursor: pointer;
+        }
+        /* 修正位：加返個 } 喺後面 */
+        .card:hover, .card:active {
+            transform: scale(1.05); 
+        }
     </style>
 </head>
 <body>
